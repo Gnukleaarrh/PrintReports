@@ -1,0 +1,20 @@
+Read from CSV file 
+	\\svrhvyprint\c$\Program Files (x86)\PaperCut Print Logger\logs\csv\daily\papercut-print-log-yyyy-mm-dd.csv
+file format columns
+	Time	User	Pages	Copies	Printer	Document Name	Client	Paper Size	Language	Height	Width	Duplex	Grayscale	Size
+	2017-06-27 00:10:51	johnwj	1	1	Freezers	Sales Order - Available Stock	WKS-11PV622	A4	PCL6			NOT DUPLEX	GRAYSCALE	59kb
+
+Find User ID from User columns
+	If user does not exist then 
+		create user & use new user ID
+Find Printer ID from Print Column
+	If Printer does not exist then 
+		create Printer & use new Printer ID
+Find Client ID from Client Column
+	If Client does not exist then 
+		create Client & use new Client ID
+		
+Create SQL statement(s) to add print Job to Database
+Insert into printJobs `PrintId`, `User`, `Pages`, `Copies`, `Printer`, `DocumentName`, `Client`, `Papersize`, `Language`, `Duplex`, `Grayscale`, `Size`
+	Values ('2017-06-27 00:10:51', User index,	1,	1, Printer Index, 'Sales Order - Available Stock'	Workstation Index,	'A4',	'PCL6',			'NOT DUPLEX',	'GRAYSCALE',	'59kb');
+
