@@ -16,5 +16,7 @@ Find Client ID from Client Column
 		
 Create SQL statement(s) to add print Job to Database
 Insert into printJobs `PrintId`, `User`, `Pages`, `Copies`, `Printer`, `DocumentName`, `Client`, `Papersize`, `Language`, `Duplex`, `Grayscale`, `Size`
-	Values ('2017-06-27 00:10:51', User index,	1,	1, Printer Index, 'Sales Order - Available Stock'	Workstation Index,	'A4',	'PCL6',			'NOT DUPLEX',	'GRAYSCALE',	'59kb');
+	Values ('2017-06-27 00:10:51', [User index],	1,	1, [Printer Index], 'Sales Order - Available Stock'	[Workstation Index],	'A4',	'PCL6',			'NOT DUPLEX',	'GRAYSCALE',	'59kb');
+	
+	
 

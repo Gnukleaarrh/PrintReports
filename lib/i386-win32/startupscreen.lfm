@@ -1,0 +1,10 @@
+object SplashScreen: TSplashScreen
+  Left = 857
+  Height = 240
+  Top = 320
+  Width = 320
+  BorderStyle = bsNone
+  Caption = 'SplashScreen'
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+end

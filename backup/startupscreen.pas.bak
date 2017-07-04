@@ -1,0 +1,41 @@
+unit StartupScreen;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+
+  { TSplashScreen }
+
+  TSplashScreen = class(TForm)
+    ScrollBar1: TScrollBar;
+    procedure FormCreate(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  SplashScreen: TSplashScreen;
+
+implementation
+
+{$R *.lfm}
+
+{ TSplashScreen }
+
+procedure TSplashScreen.FormCreate(Sender: TObject);
+begin
+  Timer1.Interval := 1000;
+  Timer1.Enabled := True;
+  start := 15;
+  ScrollBar1.Position:=start;
+end;
+
+end.
+
