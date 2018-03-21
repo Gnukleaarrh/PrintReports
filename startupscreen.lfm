@@ -24,4 +24,13 @@ object SplashScreen: TSplashScreen
     left = 55
     top = 20
   end
+  object MySQL56Connection1: TMySQL56Connection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Options = []
+    SkipLibraryVersionCheck = False
+    left = 184
+    top = 51
+  end
 end

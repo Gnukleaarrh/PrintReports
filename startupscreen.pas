@@ -5,14 +5,15 @@ unit StartupScreen;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls;
+  Classes, SysUtils, mysql56conn, sqldb, FileUtil, Forms, Controls, Graphics,
+  Dialogs, StdCtrls, ExtCtrls;
 
 type
 
   { TSplashScreen }
 
   TSplashScreen = class(TForm)
+    MySQL56Connection1: TMySQL56Connection;
     ScrollBar1: TScrollBar;
     Timer1: TTimer;
     procedure FormCreate(Sender: TObject);
